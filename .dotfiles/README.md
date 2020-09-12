@@ -37,7 +37,7 @@ dotfiles push
 1. Clone the git repository.
 
 ```shell
-git clone --bare https://github.com/di-wu/.dotfiles.git $HOME/.dotfiles
+git clone --bare git@github.com:di-wu/.dotfiles.git $HOME/.dotfiles
 ```
 
 2. Define an alias in the current shell.
