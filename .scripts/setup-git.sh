@@ -8,6 +8,8 @@ echo Git Email \(e.g. john@example.com\):
 read email
 git config --global user.email $email
 
+git config --global core.excludesfile ~/.gitignore
+
 git config --list --show-origin
 
 ssh -T git@github.com
