@@ -34,3 +34,7 @@ ix() {
     }
     curl $opts -F f:1='<-' $* ix.io/$id
 }
+
+# python
+alias pip=pip3
+alias python=python3
