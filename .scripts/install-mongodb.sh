@@ -11,3 +11,4 @@ fi
 sudo apt update
 sudo apt install mongodb-org
 
+sudo systemctl start mongod
