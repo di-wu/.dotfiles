@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt install git
 
 echo Git Name \(e.g. John Doe\):

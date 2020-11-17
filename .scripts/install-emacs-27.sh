@@ -1,6 +1,9 @@
+#!/bin/bash
+
+sudo apt install git
 git clone --single-branch --branch emacs-27 --depth 1 https://github.com/emacs-mirror/emacs.git
 cd emacs/
-sudo apt install -y autoconf make gcc texinfo libgtk-3-dev libxpm-dev \
+sudo apt install autoconf make gcc texinfo libgtk-3-dev libxpm-dev \
      libjpeg-dev libgif-dev libtiff5-dev libgnutls28-dev libncurses5-dev \
      libjansson-dev libharfbuzz-dev libharfbuzz-bin
 ./autogen.sh

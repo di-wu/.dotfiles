@@ -1,1 +1,3 @@
- sudo apt-get install haskell-platform
+#!/bin/bash
+ 
+ sudo apt install haskell-platform

@@ -2,6 +2,7 @@
 
 version=1.18.7455
 
+sudo apt install wget
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-${version}.tar.gz -O toolbox.tar.gz
 tar -xzf toolbox.tar.gz
 
