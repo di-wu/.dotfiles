@@ -1,5 +1,9 @@
 PATH=$PATH:~/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin
 
+# doom
+alias nano='vim'
+alias emacs='doom run & disown ; exit'
+
 # ssh-agent
 alias ssha='eval $(ssh-agent) && ssh-add'
 
