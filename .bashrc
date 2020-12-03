@@ -1,4 +1,4 @@
-PATH=$PATH:~/bin:~/.emacs.d/bin:$HOME/.local/bin
+PATH=$PATH:~/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin
 
 # ssh-agent
 alias ssha='eval $(ssh-agent) && ssh-add'
