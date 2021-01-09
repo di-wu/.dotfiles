@@ -10,6 +10,7 @@ echo Git Email \(e.g. john@example.com\):
 read email
 git config --global user.email $email
 
+git config --global core.editor "vim"
 git config --global core.excludesfile ~/.gitignore
 git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
