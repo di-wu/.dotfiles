@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt install apt-transport-https ca-certificates gnupg-agent software-properties-common
 
-sudo apt curl
+sudo apt install curl
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 sudo add-apt-repository \

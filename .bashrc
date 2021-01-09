@@ -1,8 +1,7 @@
 PATH=$PATH:~/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin
 
-# doom
+# no more nano
 alias nano='vim'
-alias emacs='doom run & disown ; exit'
 
 # ssh-agent
 alias ssha='eval $(ssh-agent) && ssh-add'
@@ -51,6 +50,24 @@ ix() {
     curl $opts -F f:1='<-' $* ix.io/$id
 }
 
+# Tracks whether there are changes in one of the ~/git subdictories.
+changes() {
+	find ~/git -mindepth 2 -maxdepth 3 -type d | while read -r dir
+	do
+		(
+		cd $dir
+		if [ -d "$dir/.git" ]; then
+			status=$(git status -s)
+			if [[ $status ]]; then
+				echo $dir
+				git status -s
+			fi
+		fi
+		)
+	done
+}
+
 # python
 alias pip=pip3
 alias python=python3
+
