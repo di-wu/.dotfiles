@@ -1,4 +1,4 @@
-PATH=$PATH:~/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin
+PATH=$PATH:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin
 
 # no more nano
 alias nano='vim'
@@ -66,8 +66,4 @@ changes() {
 		)
 	done
 }
-
-# python
-alias pip=pip3
-alias python=python3
 
