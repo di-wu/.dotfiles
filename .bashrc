@@ -1,4 +1,4 @@
-PATH=$PATH:~/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin
+PATH=$PATH:~/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin
 
 # no more nano
 alias nano='vim'
