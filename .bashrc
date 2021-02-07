@@ -1,4 +1,4 @@
-PATH=$PATH:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin
+PATH=$PATH:~/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin:/usr/local/zig
 
 # no more nano
 alias nano='vim'
@@ -23,6 +23,9 @@ function parse_git_branch() {
 
 # color prompt
 export PS1="\[\e[01;33m\]\u\[\e[0m\]\[\e[00;37m\]@\[\e[0m\]\[\e[01;36m\]\h\[\e[0m\]\[\e[00;37m\]\[\e[0m\] \w\n\[\e[2m\]\`parse_git_branch\`\[\e[0m\]$ "
+
+# more color
+alias ls='ls --color=auto'
 
 # ix.io
 ix() {
