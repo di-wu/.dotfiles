@@ -9,3 +9,6 @@ set shiftwidth=2
 " Use spaces when pressing <tab> key
 set expandtab
 
+autocmd BufNewFile,BufRead *.pegn setfiletype pegn
+autocmd BufNewFile,BufRead *.abnf setfiletype abnf
+
