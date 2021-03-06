@@ -1,8 +1,11 @@
 PATH=$PATH:~/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin:~/go/bin:/usr/local/zig
 
-# Go stuff...
+# go stuff...
 export GOPATH=$HOME/go
 export GOBIN=$(go env GOPATH)/bin
+
+# time stuff
+export LC_TIME=en_US.utf8
 
 # bash aliases
 if [ -f ~/.bash_aliases ]; then
