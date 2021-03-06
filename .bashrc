@@ -4,14 +4,10 @@ PATH=$PATH:~/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/l
 export GOPATH=$HOME/go
 export GOBIN=$(go env GOPATH)/bin
 
-# no more nano
-alias nano='vim'
-
-# ssh-agent
-alias ssha='eval $(ssh-agent) && ssh-add'
-
-# dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# bash aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 # git
 # get current branch in git repo
@@ -27,9 +23,6 @@ function parse_git_branch() {
 
 # color prompt
 export PS1="\[\e[01;33m\]\u\[\e[0m\]\[\e[00;37m\]@\[\e[0m\]\[\e[01;36m\]\h\[\e[0m\]\[\e[00;37m\]\[\e[0m\] \w\n\[\e[2m\]\`parse_git_branch\`\[\e[0m\]$ "
-
-# more color
-alias ls='ls --color=auto'
 
 # ix.io
 ix() {
