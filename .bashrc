@@ -1,4 +1,8 @@
-PATH=$PATH:~/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin:/usr/local/zig
+PATH=$PATH:~/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin:~/go/bin:/usr/local/zig
+
+# Go stuff...
+export GOPATH=$HOME/go
+export GOBIN=$(go env GOPATH)/bin
 
 # no more nano
 alias nano='vim'
@@ -69,4 +73,6 @@ changes() {
 		)
 	done
 }
+
+complete -C /home/di-wu/go/bin/bit bit
 
