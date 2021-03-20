@@ -6,11 +6,12 @@ syntax on
 colorscheme ron
 
 " INDENTATION
-" Set tab width to 2 columns
+" Set tab width to 2 spaces
 set tabstop=2
 set softtabstop=2
-" Use 2 column for indentation
+" Use 2 spaces for indentation
 set shiftwidth=2
+set colorcolumn=80
 " Use spaces when pressing <tab> key
 set expandtab
 " Highlight the current line
