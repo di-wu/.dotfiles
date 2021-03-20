@@ -1,4 +1,4 @@
-PATH=$PATH:~/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin:~/go/bin:/usr/local/zig
+PATH=$PATH:~/bin:~/.idris2/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin:~/go/bin:/usr/local/zig
 
 # go stuff...
 export GOPATH=$HOME/go
