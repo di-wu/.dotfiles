@@ -2,15 +2,12 @@
 
 sudo apt update
 sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 
-sudo apt install nodejs npm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
-echo "Cleaning npm cache:"
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n latest
-
-node -v && npm -v
-
+source ~/.bashrc
+nvm --version
+nvm install node
+nvm use node
+node --version
 
