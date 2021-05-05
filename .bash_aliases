@@ -35,3 +35,6 @@ alias cp='cp -i'
 # browser
 alias browser='firefox'
 
+# git
+alias gitl='git log --oneline'
+
