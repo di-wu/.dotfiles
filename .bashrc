@@ -1,4 +1,4 @@
-PATH=$PATH:~/bin:~/.idris2/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin:~/go/bin:/usr/local/zig
+PATH=$PATH:~/bin:~/.idris2/bin:~/.aseprite/bin:~/.cargo/bin:~/.emacs.d/bin:~/.local/bin:/usr/local/go/bin:/usr/local/flutter/bin:~/go/bin:/usr/local/zig
 
 # go stuff...
 export GOPATH=$HOME/go
@@ -74,3 +74,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
