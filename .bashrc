@@ -26,6 +26,6 @@ fi
 # Opt-out of having data collected about dfx usage.
 if [ -f ~/bin/dfx ]; then
   export DFX_TELEMETRY_DISABLED=1
-  alias moc="$(dfx cache show)/moc"
+  alias moc="$(dfx cache show)/moc --package base $(dfx cache show)/base"
 fi
 

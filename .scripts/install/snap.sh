@@ -7,11 +7,14 @@ pkgList=(
   "discord" 
   "slack --classic" 
   "spotify"
+  "code --classic" # vscode
+  "obs-studio"
 )
  
 for pkg in "${pkgList[@]}"; do
-  if [[ -z $(snap list | grep ${pkg%% *}) ]]; then
-    read -p "Do you want to install ${pkg}? " -n 1 -r
+  name=${pkg%% *}
+  if [[ -z $(snap list | grep $name) ]]; then
+    read -p "Do you want to install ${name}? " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
       sudo snap install $pkg

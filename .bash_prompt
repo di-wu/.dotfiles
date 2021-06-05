@@ -1,0 +1,18 @@
+#!/bin/bash
+
+git_branch() {
+  BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+  if [ ! "${BRANCH}" == "" ]; then
+    echo "[${BRANCH}] "
+  else
+    echo "" # not in a git repo.
+  fi
+}
+
+PS1="\[\e[01;33m\]\u\[\e[0m\]"            # username
+PS1+="\[\e[00;37m\]@\[\e[0m\]"
+PS1+="\[\e[01;36m\]\h\[\e[0m\]"           # host
+PS1+=" \w\n"                              # pwd
+PS1+="\[\e[2m\]\`git_branch\`\[\e[0m\]$ " # git branch
+export PS1
+
