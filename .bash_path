@@ -1,8 +1,30 @@
 #!/bin/bash
 
-PATH=$PATH:~/bin
-if [[ -d /usr/local/go ]]; then
-  PATH+=:/usr/local/go/bin
+pathappend() {
+  for ARG in "$@"; do
+    test -d "${ARG}" || continue
+    PATH=${PATH//:${ARG}:/:}
+    PATH=${PATH/#${ARG}:/}
+    PATH=${PATH/%:${ARG}/}
+    export PATH="${PATH:+"${PATH}:"}${ARG}"
+  done
+}
+
+pathprepend() {
+  for ARG in "$@"; do
+    test -d "${ARG}" || continue
+    PATH=${PATH//:${ARG}:/:}
+    PATH=${PATH/#${ARG}:/}
+    PATH=${PATH/%:${ARG}/}
+    export PATH="${ARG}${PATH:+":${PATH}"}"
+  done
+}
+
+if [[ -f ~/bin/dfx ]]; then
+	pathappend ~/bin $(dfx cache show)
 fi
-export PATH
+
+if [[ -d /usr/local/go ]]; then
+	pathprepend /usr/local/go/bin
+fi
 
