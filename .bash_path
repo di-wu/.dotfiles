@@ -21,7 +21,7 @@ pathprepend() {
 }
 
 if [[ -f ~/bin/dfx ]]; then
-	pathappend ~/bin $(dfx cache show)
+	pathappend ~/bin $(~/bin/dfx cache show)
 fi
 
 if [[ -d /usr/local/go ]]; then

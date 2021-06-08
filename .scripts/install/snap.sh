@@ -9,6 +9,7 @@ pkgList=(
   "spotify"
   "code --classic" # vscode
   "obs-studio"
+  "thunderbird"
 )
  
 for pkg in "${pkgList[@]}"; do
