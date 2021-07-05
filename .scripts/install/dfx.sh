@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set +xe
+
 sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"
 . ~/.bashrc
 dfx cache install

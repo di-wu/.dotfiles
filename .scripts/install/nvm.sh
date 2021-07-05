@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -xe
+
 if [[ ! -d ~/.nvm ]]; then
   v="v0.38.0" # Default version?
   cd ~/

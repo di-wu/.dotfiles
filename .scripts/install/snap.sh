@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -xe
+
 # Update all installed snaps.
 sudo snap refresh
 
