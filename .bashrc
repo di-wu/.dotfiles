@@ -29,3 +29,8 @@ if [ -f ~/bin/dfx ]; then
   alias moc="$(~/bin/dfx cache show)/moc --package base $(~/bin/dfx cache show)/base"
 fi
 
+# Nix
+if [ -d /nix ]; then
+  . /home/quint/.nix-profile/etc/profile.d/nix.sh
+fi
+
