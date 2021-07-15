@@ -26,5 +26,6 @@ fi
 
 if [[ -d /usr/local/go ]]; then
 	pathprepend /usr/local/go/bin
+	pathprepend ~/go/bin
 fi
 
